@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lesson Plans: Piano Pals</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const section = document.getElementById('fun-lesson');
+      section.addEventListener('mouseover', function () {
+        section.style.transform = 'scale(1.02)';
+      });
+      section.addEventListener('mouseout', function () {
+        section.style.transform = 'scale(1)';
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const priceBox = document.getElementById('price-list');
+      priceBox.addEventListener('mouseover', function () {
+        priceBox.style.transform = 'scale(1.02)';
+      });
+      priceBox.addEventListener('mouseout', function () {
+        priceBox.style.transform = 'scale(1)';
+      });
+    });
+
+  </script>
+
 </head>
+
 <body>
   <header>
     <h1>Piano Pals with Mandi</h1>
     <p>Making music magical for little learners</p>
+
+
+
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Mandi</a>
-    <a href="lessons.html">Lesson Plans</a>
+    <a href="lessons.html">Lessons</a>
     <!-- <a href="contact.html">Contact</a> -->
   </nav>
 
@@ -26,41 +55,68 @@
 
         <section>
           <h2>Lesson Plans</h2>
-          <p>Every child is different – and so are our lessons! Mandi creates personalised plans based on your little one’s goals, whether that’s preparing for an exam, composing their own music, or just exploring the wonderful world of sound.</p>
-        
+          <p>Every child is different – and so are our lessons! Mandi creates personalised plans based on your little
+            one’s goals, whether that’s preparing for an exam, composing their own music, or just exploring the
+            wonderful world of sound.</p>
+
           <p>Here’s a little peek into what our youngest pianists get up to:</p>
-        
-          <p>We start each session with our cheerful Hello song and a wriggly warm-up with the Wiggle Wiggle tune. At the end of every lesson, we cuddle the toys and tuck them into bed – the perfect musical wind-down.</p>
-        
-          <p>In between, it’s a magical mix of exploring pitch, rhythm, dynamics, tempo, and articulation – all with the help of Tucker the dog, Jessie the cat, Billy the bunny, and their musical gang! Mums, Dads, and carers are welcome to join in the fun with songs and games that make learning feel like play.</p>
-        
-          <p>Each child gets their very own practice book, earns stickers as they go, and celebrates milestones with certificates – because every step is worth celebrating!</p>
+
+
+          <section id="fun-lesson"
+            style="padding: 1em; background-color: #fffbe6; border-radius: 12px; border: 2px dashed #ffcc70; margin: 1em 0; transition: transform 0.3s ease-in-out;">
+            <p style="font-size: 1.2em; color: #ff6600; font-weight: bold; margin-bottom: 0.5em;">
+              🎵 We start each session with our cheerful <span style="color: #ff3399;">Hello song</span> and a wriggly
+              warm-up with the <span style="color: #3399ff;">Wiggle Wiggle</span> tune.
+            </p>
+            <p style="font-size: 1.2em; color: #336633; font-weight: bold;">
+              🧸 At the end of every lesson, we cuddle the toys and tuck them into bed – the perfect musical wind-down.
+              💫
+            </p>
+          </section>
+
+
+
+          <p>In between, it’s a magical mix of exploring pitch, rhythm, dynamics, tempo, and articulation – all with the
+            help of Tucker the dog, Jessie the cat, Billy the bunny, and their musical gang! Mums, Dads, and carers are
+            welcome to join in the fun with songs and games that make learning feel like play.</p>
+
+          <p>Each child gets their very own practice book, earns stickers as they go, and celebrates milestones with
+            certificates – because every step is worth celebrating!</p>
         </section>
-        
-        <section>
-          <h2>Prices</h2>
-          <p><strong>Ages 3–5:</strong> We suggest starting with 15 minutes and gradually working up to 30 minutes.</p>
-          <ul>
-            <li>£12 per child – if Mandi travels to you</li>
-            <li>£10 per child – if you come to Mandi (15 minutes)</li>
+
+
+
+
+        <section id="price-list"
+          style="background-color: #e6f7ff; border: 2px solid #99ddff; border-radius: 12px; padding: 1.5em; margin: 1em 0; transition: transform 0.3s ease-in-out;">
+          <h2 style="color: #0066cc; font-size: 1.6em; margin-bottom: 0.5em;">🎹 Lesson Prices 
+            
+           
+            
+            </h2>
+
+          <h3 style="color: #339966; margin-top: 1em;">👶 Ages 3–5  <span
+              style="font-size: 0.8em;">(per 15 minutes)</span>  </h3>
+          <p style="margin: 0.5em 0;">We recommend starting with 15 minutes and gradually increasing to 30 minutes.</p>
+          <ul style="list-style: none; padding-left: 0; font-weight: bold; margin-bottom: 0.5em;">
+            <li>£12 per child – if Mandi comes to you</li>
+            <li>£10 per child – if you come to Mandi</li>
           </ul>
-        
-          <p>This includes:</p>
-          <ul>
-            <li>Practice book</li>
-            <li>Stickers</li>
-            <li>Toys</li>
-            <li>Bubbles</li>
-            <li>Planning</li>
-            <li>Certificates</li>
-          </ul>
-        
-          <p><strong>Age 5+:</strong> £30 per hour at our location, using our beautiful Welmar piano.</p>
-          <p>We suggest younger children start with 20 minutes (pro rata cost), gradually working up to 30 minutes. For older or more experienced learners, 30 minutes is recommended (also pro rata).</p>
-        
-          <p>Please get in touch with any questions – Mandi is happy to be flexible with timings, and all pricing is pro rata.</p>
+          <p style="margin: 0.5em 0;"><strong>Includes:</strong></p>
+          <p style="margin: 0.5em 0; color: #555;">Practice book, stickers, toys, bubbles, personalised planning and
+            certificates – all designed to make learning fun and engaging. ✨</p>
+
+          <h3 style="color: #cc6600; margin-top: 1em;">🧒 Ages 5+</h3>
+          <p style="font-weight: bold;">£30 per hour at our location, using our beautiful Welmar piano.</p>
+          <p>• Younger children can start with 20 minutes (charged pro rata), working up to 30.<br>
+            • For older or more experienced learners, 30 minutes is ideal (also pro rata).</p>
+          <p style="color: #444;">⏰ Flexible timing and pricing – just
+            
+            
+            <a href="mailto:info@pianopals.co.uk">  get in touch</a> and Mandi will be happy to help.</p>
         </section>
-        
+
+
       </div>
       <div class="image-content">
         <img src="lessons.png" alt="Woodland animal band playing music together" />
@@ -71,7 +127,14 @@
 
 
   <footer>
-    &copy; 2025 Mandi Wickens 
+     &copy; 2025 <a href="https://www.linkedin.com/in/mandi-wickens-270b7413/?originalSubdomain=uk"> Mandi Wickens</a>
   </footer>
 </body>
+
+<!-- 
+
+http://www.wickens.uk
+
+-->
+
 </html>
