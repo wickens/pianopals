@@ -126,9 +126,13 @@
 
 
 
-  <footer>
-     &copy; 2025 <a href="https://www.linkedin.com/in/mandi-wickens-270b7413/?originalSubdomain=uk"> Mandi Wickens</a>
-  </footer>
+  <!-- Footer include -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
 </body>
 
 <!-- 
