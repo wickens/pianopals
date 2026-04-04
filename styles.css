@@ -67,6 +67,31 @@ main {
   color: var(--accent);
 }
 
+.booking-banner {
+  background: linear-gradient(135deg, #fff4cc, #ffe0b2);
+  border: 2px solid #fb8500;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(251, 133, 0, 0.12);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.booking-banner h2 {
+  color: #c75b12;
+  margin-bottom: 0.75rem;
+}
+
+.booking-banner p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.booking-banner a {
+  color: #0b6d85;
+  font-weight: 700;
+}
+
 .illustration {
   text-align: center;
   margin-top: 2rem;
@@ -140,5 +165,9 @@ footer {
   .image-content {
     margin-top: 1.5rem;
     text-align: center;
+  }
+
+  .booking-banner {
+    padding: 1.25rem;
   }
 }
