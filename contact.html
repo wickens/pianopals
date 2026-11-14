@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Piano Pals: Contact Mandi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Standard Favicons -->
@@ -24,13 +24,13 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- SEO Meta Tags -->
-  <title>Piano Pals with Mandi – Music Lessons for Kids</title>
+  
   <meta name="description"
     content="Fun and friendly piano and singing lessons for young children in the UK with Mandi and her musical animal friends.">
   <meta name="author" content="Mandi - Piano Pals">
   <meta name="keywords"
     content="piano lessons for kids, music for children, singing lessons, kids piano teacher UK, Mandi music, Piano Pals">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
   <!-- Social Sharing (Open Graph) -->
   <meta property="og:title" content="Piano Pals with Mandi" />
@@ -53,24 +53,25 @@
     <p>Making music magical for little learners</p>
   </header>
 
-  <nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About Mandi</a>
     <a href="lessons.html">Lessons</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" aria-current="page">Contact</a>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="intro split-layout">
       <div class="text-content">
         <section>
 
-<div style="background-color: #fff8e1; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); font-family: 'Quicksand', sans-serif; color: #333; max-width: 800px; margin: 0 auto; line-height: 1.7; font-size: 1.1rem;">
-  <h2>Contact Piano Pals</h2>
-  <p style="margin-bottom: 1.5rem;">
+<div>
+  <p class="eyebrow">Let’s make music</p><h2>Say hello to Mandi</h2><p class="availability-note">Fully booked until <strong>August 2027</strong>. You’re welcome to email to join the waiting list.</p>
+  <p>
     Ready to begin your child’s musical adventure? Whether you’re curious about lesson availability or just have a few questions, I’d love to hear from you.
   </p>
-  <p style="margin-bottom: 2rem;">
+  <p>
     Click the button below to send me an email – let’s make some musical magic together!
   </p>
   <button 
@@ -84,9 +85,6 @@
       link.click();
       document.body.removeChild(link);
     "
-    style="display: inline-block; background-color: #219ebc; color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; border: none; cursor: pointer; font-size: 1.15rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
-    onmouseover="this.style.backgroundColor='#197a94';"
-    onmouseout="this.style.backgroundColor='#219ebc';"
   >
     Email Mandi
   </button>
